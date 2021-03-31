@@ -5,7 +5,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
-  --color-body-darker: #5c5577; 
+  --color-body-darker: #5c5577;
   --color-border: #ccc;
   --border-radius: 30px;
 }
@@ -288,7 +288,7 @@ a {
   overflow: hidden;
 }
 
-.card__header, 
+.card__header,
 .card__body {
   padding: 2rem 3rem;
 }
@@ -353,15 +353,15 @@ a {
   .plan__name {
     font-size: 1.4rem;
   }
-  
+
   .plan__price {
     font-size: 5rem;
   }
-  
+
   .plan__billing-cycle {
     font-size: 1.6rem;
   }
-  
+
   .plan__description {
     font-size: 1.7rem;
   }
@@ -411,7 +411,7 @@ a {
 
 .quote__company {
   color: var(--color-headings);
-  opacity: .4;
+  opacity: 0.4;
   font-size: 2rem;
   font-style: normal;
 }
@@ -425,13 +425,30 @@ a {
   .quote {
     font-size: 2rem;
   }
-  
+
   .quote__author {
     font-size: 2.4rem;
   }
-  
+
   .quote__company {
     font-size: 1.6rem;
   }
-  
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
