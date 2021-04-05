@@ -865,6 +865,12 @@ a {
   text-align: center;
 }
 
+.footer__brand img {
+  /* TODO: COnsidering refactoring this and applying to all images */
+  width: 100%;
+  max-width: 230px;
+}
+
 .footer__copyright {
   font-size: 1.2rem;
   color: #fff;
