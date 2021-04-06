@@ -1,4 +1,4 @@
-/* Color Palette */
+@import "./normalize.css"; /* Color Palette */
 :root {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
