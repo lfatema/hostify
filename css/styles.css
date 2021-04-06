@@ -22,11 +22,15 @@
   background-color: var(--color-primary);
   color: #fff;
 }
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
-  font-size: 2.4 rem;
+  font-size: 2.4rem;
   line-height: 1.5;
 }
 
@@ -48,7 +52,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 p {
@@ -210,7 +214,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -297,7 +301,8 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem, 1rem;
+  padding: 1.5rem 1rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -755,8 +760,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -793,7 +799,7 @@ a {
 }
 
 .feature__heading {
-  margin-top: 1rem 0;
+  margin-top: 1rem;
 }
 
 .feature__image {
@@ -853,11 +859,11 @@ a {
 .footer_section .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .footer_section .collapsible__content {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .footer__brand {
@@ -872,12 +878,16 @@ a {
 }
 
 .footer__copyright {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #fff;
   opacity: 0.3;
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.5rem;
+  }
+
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
@@ -887,7 +897,6 @@ a {
   }
 
   .footer .collapsible__content {
-    font-size: 1rem;
     max-height: 100%;
     opacity: 1;
   }
@@ -897,15 +906,16 @@ a {
   }
 
   .footer__heading {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   .footer__brand {
     order: -1;
     margin-top: 1rem;
   }
+}
 
-  .footer__copyright {
-    font-size: 1.2rem;
-  }
+/* Sign-up Callout */
+.callout-signup {
+  transform: translateY(5rem);
 }
